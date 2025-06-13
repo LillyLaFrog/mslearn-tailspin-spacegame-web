@@ -14,10 +14,10 @@ steps:
     packageType: sdk
     version: '6.x'
 
-- task: Npm@1
-  displayName: 'Run npm install'
+- task: NodeTool@0
+  displayName: 'Run npm install for version 12.x'
   inputs:
-    verbose: false
+    versionSpec:  '12.x'
 
 - script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
   displayName: 'Compile Sass assets'
