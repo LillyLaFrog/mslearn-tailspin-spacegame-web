@@ -15,9 +15,12 @@ steps:
     version: '6.x'
 
 - task: NodeTool@0
-  displayName: 'Run npm install for version 17.x'
+  displayName: 'Use node version 17.x'
   inputs:
     versionSpec:  '17.x'
+
+- script: 'npm install'
+  displayName: 'Install npm packages'
 
 - script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
   displayName: 'Compile Sass assets'
