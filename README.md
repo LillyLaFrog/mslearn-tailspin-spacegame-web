@@ -1,4 +1,6 @@
 
+[![Build Status](https://dev.azure.com/TailSpinToysOrg/Space%20Game%20-%20Web/_apis/build/status%2FLillyLaFrog.mslearn-tailspin-spacegame-web?branchName=main)](https://dev.azure.com/TailSpinToysOrg/Space%20Game%20-%20Web/_build/latest?definitionId=2&branchName=main)
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
