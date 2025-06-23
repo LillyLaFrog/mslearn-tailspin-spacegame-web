@@ -46,11 +46,11 @@ steps:
     sudo apt install mono-devel
   displayName: 'install mono'
   
-- task: NuGetCommand@2
+- task: DotNetCoreCLI@2
   displayName: 'Restore project dependencies'
   inputs:
     command: 'restore'
-    restoreSolution: '**/*.sln'
+    projects: '**/*.csproj'
     feedsToUse: 'select'
     vstsFeed: '$(System.TeamProject)/Tailspin.SpaceGame.Web.Models'
 
